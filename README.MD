@@ -1,92 +1,105 @@
-<p align="center">
-    <img width="100" src=".github/assets/banner.png">
-</p>
+# Ebook: Domine os Seletores CSS com Exemplos Práticos
 
-
-<p align="center">
-<a href="https://dio.me/"><img src="https://img.shields.io/badge/DIO-Course-28DA77?logo=youtube" alt="DIO - course"></a>
-<a href="https://www.gnu.org/software/bash/" title="Go to Bash homepage"><img src="https://img.shields.io/badge/Prompt-Project-blue?logo=gnu-bash&amp;logoColor=white" alt="Made with Bash"></a></p>
-
--------
-
-
-<p align="center">
-<img 
-    src="./assets/cover.png"
-    width="400"  
-/>
-</p>
-
-# Projeto EBOOK Gerado por I.A.s
-
-
- > ℹ️ **NOTE:** Este é o repositório desenvolvido durante o curso no qual fui instrutor técnico na plataforma da [DIO](https://dio.me)
-
-Projeto com o objetivo de gerar um ebook digital com as facilidades das ferramentas de IA. todos os prompts
-seguem abaixo.
-
-<a href="https://github.com/felipeAguiarCode/prompts-recipe-to-create-a-ebook/blob/main/output/ebook%20-%20css%20jedi%20output.pdf" title="View PDF now"> 📕Clique aqui para ler</a>
-
-## 💻 Tecnologias utilizadas no projeto
-
-- [ChatGPT](https://chat.openai.com/) 
-- [MidJourney](https://www.midjourney.com/app/)
-- [PowerPoint](https://www.microsoft.com/en/microsoft-365/powerpoint)
-
-## 🧠 Prompts
-
-
-ChatGPT：
-
-|   Ação   | prompt                                                                                                                                                                                                                                                                         |
-| :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|  título  | Crie um título de um ebook sobre o tema de css, o ebookk é do nicho de programação e o subnicho é de css, o título deve ser épico e curto, e tenha uma temática de star wars no título, me liste 5 variações de títulos                                                        |
-| conteúdo | Faça um texto para ebook , com foco em CSS, listando os principais seletores CSS com exemplos em código {REGRAS} Explique sempre de uma maneira simples Deixe o texto enxuto, Sempre traga exemplos de código em contextos reais , sempre deixe um título sugestivo por tópico |
-
-
-Midjourney：
-
-|  Ação  | prompt                                                                                 |
-| :----: | -------------------------------------------------------------------------------------- |
-| título | A jedi in meditation pose, with your blue lightsaber floating, pixel art style --v 5.1 |
-
-## ✨ Features
-
-- Conteúdo gerado via ChatGPT
-- Imagens geradas via MidJourney
-
-## 📚 Materiais
-
-- Imagens utilizadas em `assets`
-- ebook gerado durante as aulas em `output`
-
-## 🛠️ Instruções de execução
-
-Utilize os prompts acima nas ferramentas sugeridas para gerar o material base e utilize uma ferramenta de edição de documentos como power point, libreoffice , indesign para diagramação.
-
-## 👨‍💻 Expert
-
-<p>
-    <img 
-      align=left 
-      margin=10 
-      width=80 
-      src="https://avatars.githubusercontent.com/u/37452836?v=4"
-    />
-    <p>&nbsp&nbsp&nbspFelipe Aguiar<br>
-    &nbsp&nbsp&nbsp
-    <a href="https://github.com/felipeAguiarCode">
-    GitHub</a>&nbsp;|&nbsp;
-    <a href="www.linkedin.com/in/
-felipe-exe">LinkedIn</a>
-&nbsp;|&nbsp;
-    <a href="https://www.instagram.com/felipeaguiar.exe/">
-    Instagram</a>
-&nbsp;|&nbsp;</p>
-</p>
-<br/><br/>
-<p>
+## Introdução
+CSS (Cascading Style Sheets) é a linguagem que traz estilo e vida aos websites. Neste ebook, você aprenderá os principais seletores CSS, com exemplos práticos para que possa dominar essa ferramenta essencial no desenvolvimento web.
 
 ---
 
-⌨️ com 💜 por [Felipe Aguiar](https://github.com/felipeAguiarCode)
+## 1. Seletor Universal (`*`)
+**Descrição:** Aplica estilo a todos os elementos.
+
+**Exemplo:**
+```css
+* {
+  margin: 0;
+  padding: 0;
+}
+```
+**Uso:** Ideal para resetar estilos padrões.
+
+---
+
+## 2. Seletor de Elemento
+**Descrição:** Alvo para um tipo específico de tag HTML.
+
+**Exemplo:**
+```css
+h1 {
+  color: blue;
+}
+```
+**Uso:** Estilizar cabeçalhos, parágrafos, etc.
+
+---
+
+## 3. Seletor de Classe (`.`)
+**Descrição:** Estiliza elementos com uma classe específica.
+
+**Exemplo:**
+```css
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+```
+**Uso:** Reutilizar estilos em diferentes elementos.
+
+---
+
+## 4. Seletor de ID (`#`)
+**Descrição:** Aplica estilos a um elemento único.
+
+**Exemplo:**
+```css
+#header {
+  background-color: #f4f4f4;
+}
+```
+**Uso:** Elementos únicos como cabeçalhos ou rodapés.
+
+---
+
+## 5. Seletor de Grupo
+**Descrição:** Estiliza múltiplos elementos simultaneamente.
+
+**Exemplo:**
+```css
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
+```
+**Uso:** Economizar código ao compartilhar estilos.
+
+---
+
+## 6. Seletor de Filhos Diretos (`>`)
+**Descrição:** Aplica estilos aos filhos diretos de um elemento pai.
+
+**Exemplo:**
+```css
+nav > ul {
+  list-style: none;
+}
+```
+**Uso:** Controle direto sobre a hierarquia do DOM.
+
+---
+
+## 7. Seletor de Atributo
+**Descrição:** Estiliza elementos baseados em atributos.
+
+**Exemplo:**
+```css
+a[target="_blank"] {
+  color: red;
+}
+```
+**Uso:** Links, inputs e mais.
+
+---
+
+## Conclusão
+Com esses seletores CSS, você pode criar estilos precisos e eficientes. Pratique com os exemplos fornecidos e explore o poder do CSS em seus projetos!
+
+**Nota:** Este conteúdo foi projetado para um ebook digital, mantendo a harmonia visual, fontes legíveis e design responsivo para evitar fadiga visual.
+
